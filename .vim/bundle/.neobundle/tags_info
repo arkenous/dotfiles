@@ -1,0 +1,10 @@
+jedi-vim
+lightline.vim
+neobundle.vim
+neocomplcache
+tagbar
+unite.vim
+vim-easymotion
+vim-indent-guides
+vim-quickrun
+vimproc
