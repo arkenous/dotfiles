@@ -2,9 +2,13 @@ set encoding=utf-8
 "##### 表示設定 #####
 "set title "編集中のファイル名表示
 syntax on "コードの色分け
-set tabstop=4 "インデントをスペース4つ分に設定
-set shiftwidth=4
-set softtabstop=0
+
+"タブ幅の設定
+set expandtab "タブをスペースに置き換える
+set tabstop=2 "インデントをスペース2つ分に設定
+set softtabstop=2 "Tabキーを押した時に挿入される空白の量
+set shiftwidth=2 "vimが自動的に挿入するインデントなどの幅
+
 set smartindent "オートインデント
 set laststatus=2
 
@@ -25,9 +29,6 @@ set backupdir=$HOME/vimbackup
 " vi互換をオフにする
 "" スワップファイル用のディレクトリを指定する
 set directory=$HOME/vimbackup
-
-" タブの代わりに空白文字を指定する
-"set expandtab
 
 "" 変更中のファイルでも，保存しないで他のファイルを表示する
 set hidden
