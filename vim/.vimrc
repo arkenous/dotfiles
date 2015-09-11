@@ -62,7 +62,6 @@ endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 " let NeoBundle manage NeoBundle
 NeoBundle 'Shougo/neobundle.vim'
-call neobundle#end()
 "
 " add plugins
 "
@@ -76,6 +75,11 @@ NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimproc'
+NeoBundle 'majutsushi/tagbar'
+NeoBundle 'itchyny/lightline.vim'
+call neobundle#end()
 
 let g:jedi#auto_vim_configuration = 0
 
@@ -168,10 +172,6 @@ function! MyCakephp()
   return exists('*cake#buffer') ? cake#buffer('type') : ''
 endfunction
 
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/vimproc'
-NeoBundle 'majutsushi/tagbar'
-NeoBundle 'itchyny/lightline.vim'
 
 let g:lightline = {
       \ 'colorscheme': 'wombat'
@@ -256,6 +256,6 @@ endif
 
 " カーソル行と列を強調表示
 set cursorline
-set cursorcolumn
+"set cursorcolumn
 
 colorscheme monokai
