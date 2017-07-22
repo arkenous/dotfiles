@@ -142,3 +142,6 @@ set laststatus=2
 set noshowmode
 set t_Co=256
 let g:airline_theme = 'tenderplus'
+
+let g:airline_left_sep = "\uE0C6"
+let g:airline_right_sep = "\uE0C7"
