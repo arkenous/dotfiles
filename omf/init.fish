@@ -31,6 +31,8 @@ if which rbenv > /dev/null ^&1; status --is-interactive; and . (rbenv init - | p
 
 # GO
 set -gx GOROOT /usr/local/opt/go/libexec
+set -gx GOPATH $HOME/.go
+set -gx PATH $GOPATH/bin $PATH
 
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
