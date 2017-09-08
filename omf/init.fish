@@ -7,7 +7,7 @@ set -g theme_display_virtualenv yes
 set -g theme_display_ruby no
 set -g theme_nerd_fonts yes
 set -g theme_show_exit_status yes
-set -g theme_color_scheme dark
+set -g theme_color_scheme solarized-dark
 
 
 # android sdk tools path
