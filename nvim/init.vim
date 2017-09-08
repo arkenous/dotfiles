@@ -112,6 +112,12 @@ if dein#load_state(s:dein_cache_dir)
   call dein#add('artur-shaik/vim-javacomplete2')
   call dein#add('airblade/vim-gitgutter')
   call dein#add('cohama/lexima.vim')
+
+  " Markdown
+  call dein#add('plasticboy/vim-markdown')
+  call dein#add('kannokanno/previm')
+  call dein#add('tyru/open-browser.vim')
+
   call dein#add('altercation/vim-colors-solarized')
   call dein#add('jacoborus/tender.vim')
   call dein#add('vim-airline/vim-airline')
@@ -130,6 +136,11 @@ let g:deoplete#sources#clang#libclang_path = '/Library/Developer/CommandLineTool
 let g:deoplete#sources#clang#clang_header = '/usr/local/Cellar/llvm/4.0.1/lib/clang'
 
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+" Markdown
+au BufRead,BufNewFile *.md set filetype=markdown
+let g:vim_markdown_folding_disabled = 1
+let g:previm_open_cmd = 'open -a Google\ Chrome'
 
 syntax enable
 "if (has("termguicolors"))
