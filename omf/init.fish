@@ -13,9 +13,6 @@ set -g theme_color_scheme dark
 # android sdk tools path
 set -gx PATH $HOME/Library/Android/sdk/platform-tools $PATH
 
-# nodebrew path
-set -gx PATH $HOME/.nodebrew/current/bin $PATH
-
 # pyenv (installed by homebrew)
 set -gx PYENV_ROOT /usr/local/var/pyenv
 if which pyenv > /dev/null ^&1; . (pyenv init - | psub); end
