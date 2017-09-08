@@ -112,6 +112,7 @@ if dein#load_state(s:dein_cache_dir)
   call dein#add('artur-shaik/vim-javacomplete2')
   call dein#add('airblade/vim-gitgutter')
   call dein#add('cohama/lexima.vim')
+  call dein#add('altercation/vim-colors-solarized')
   call dein#add('jacoborus/tender.vim')
   call dein#add('vim-airline/vim-airline')
 
@@ -130,12 +131,14 @@ let g:deoplete#sources#clang#clang_header = '/usr/local/Cellar/llvm/4.0.1/lib/cl
 
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
-if (has("termguicolors"))
-  set termguicolors
-endif
 syntax enable
+"if (has("termguicolors"))
+  "set termguicolors
+"endif
+"colorscheme tender
+set background=dark
+colorscheme solarized
 filetype plugin indent on
-colorscheme tender
 
 let g:airline_powerline_fonts = 1
 set laststatus=2
