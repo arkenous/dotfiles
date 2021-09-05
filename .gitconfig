@@ -1,0 +1,8 @@
+[user]
+	name = Kensuke Kosaka
+	email = k3n@k3n.link
+	signingkey = 30723FB4
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg
