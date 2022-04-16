@@ -55,10 +55,7 @@ call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
 
 " Color schemes
-call dein#add('morhetz/gruvbox')
-call dein#add('cocopon/iceberg.vim')
-call dein#add('arcticicestudio/nord-vim')
-call dein#add('dracula/vim')
+call dein#add('ayu-theme/ayu-vim')
 
 call dein#end()
 
@@ -72,7 +69,7 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Airline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:airline_theme='iceberg'
+let g:airline_theme='ayu_dark'
 let g:airline#extensions#tabline#enabled = 1 " タブが一つだけのとき、自動で全バッファのリストを表示させる
 let g:airline_powerline_fonts = 1 " AirlineでPowerline fontsを用いる
 
@@ -83,4 +80,5 @@ syntax enable
 set noshowmode " モードを表示しない
 set background=dark
 set termguicolors
-colorscheme iceberg
+let ayucolor="dark"
+colorscheme ayu
